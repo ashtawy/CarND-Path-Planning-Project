@@ -1,5 +1,10 @@
 # CarND-Path-Planning-Project
 Path Planner for Autonomous Vehicle Driving around a Virtual Highway.  
+
+<p align="center">
+  <img width="740" height="480" src="vid_480px.gif">
+</p>
+
    
 ### Simulator.
 You can download the Term3 Simulator which contains the Path Planning Project from the [releases tab (https://github.com/udacity/self-driving-car-sim/releases/tag/T3_v1.2).
@@ -73,7 +78,7 @@ The path planner model in this project is a discrete system that runs two main s
     4. The resulting spline's equation is then used to compute the lateral position y for every longitudinal position x along the path. As stated above, these points are spaced apart such that the resulting vehicle speed when transitioning between the points is approximately the speed proposed by the behavioral planner. To achieve this spacing, the curve was linearized and then broken into segments where the length of each segment is calculated based on the proposed speed and the time the car takes to finish each segment (i.e., the time to move from one point to the next which is set to be 0.02 seconds in this project). 
     5. The longitudinal and lateral points are then converted back from the vehicle to the world coordinate system and sent to the simulator to use for moving the car. 
 
-These two steps of behavior planning and trajectory generation is repeated over and over until the simulator is closed.
+These two steps of behavior planning and trajectory generation are repeated over and over until the simulator is closed.
 
 ---
 
